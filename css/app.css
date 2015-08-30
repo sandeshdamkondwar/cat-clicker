@@ -1,0 +1,13 @@
+body,
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.cat-click-container {
+    text-align: center;
+}
+
+.counter-container {
+    margin-top: 1em;
+}
