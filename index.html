@@ -6,16 +6,29 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="cat-click-container">
-        <h1>Cat Clicker</h1>
-        <img id="catImage" src="img/cat.jpg" alt="Cat">
-        <div class="counter-container">
-            <span>Click Counts:</span>
-            <span class="click-count">0</span>
-        </div>
+    <h1 class="title light-font">Cat Clicker</h1>
+
+    <div id="cats">
+        <!-- Cats will go here -->
     </div>
+
+    <script type="text/template" id="catTemplate">
+        <div class="cat-click-container cat">
+            <div class="padding-0-15">
+                <h3 class="light-font">Name: <%= name %></h3>
+                <img class="image" src="<%= catResourcesDir %><%= image %>" alt="<%= name %>">
+                <div class="counter-container">
+                    <span>Click Counts: </span>
+                    <span class="click-count bold"><%= clicks %></span>
+                </div>
+            </div>
+        </div>
+    </script>
+
     <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
     <script src="js/app.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 </body>
 </html>

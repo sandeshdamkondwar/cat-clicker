@@ -1,13 +1,46 @@
-body,
-h1 {
+/* Reset */
+body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
-.cat-click-container {
+img {
+    max-width: 100%;
+}
+
+/* Reset end */
+
+
+/* Utilities */
+.title {
     text-align: center;
+}
+
+.padding-0-15 {
+    padding: 0 15px;
+}
+
+.light-font {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Utilities end */
+
+
+/* Cat */
+.cat {
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    float: left;
 }
 
 .counter-container {
     margin-top: 1em;
 }
+
+/* Cat end */
